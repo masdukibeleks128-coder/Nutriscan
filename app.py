@@ -62,7 +62,7 @@ hero_html = """
 
   .hero {
     position: relative;
-    min-height: 480px;
+    min-height: 780px;
     background-image: url('https://raw.githubusercontent.com/masdukibeleks128-coder/deficiency-detection/main/background.jpeg');
     background-size: cover;
     background-position: center;
