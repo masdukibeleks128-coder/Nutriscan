@@ -37,7 +37,12 @@ st.set_page_config(layout="wide", page_title="Nutriscan")
 # Hapus padding bawaan Streamlit
 st.markdown("""
 <style>
-  .block-container { padding-top: 0 !important; }
+  .block-container {
+    padding-top: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    max-width: 100% !important;
+  }
 </style>
 """, unsafe_allow_html=True)
 
