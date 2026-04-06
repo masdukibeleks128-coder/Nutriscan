@@ -66,6 +66,14 @@ hero_html = """
     inset: 0;
     background: linear-gradient(to right, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.5) 60%, transparent 100%);
   }
+  .hero__logo {{
+    position: absolute;
+    top: 24px;
+    left: 40px;
+    z-index: 3;
+    width: 50px;
+    height: auto;
+  }}
   .hero__content {
     position: relative;
     z-index: 2;
@@ -88,6 +96,8 @@ hero_html = """
     margin-bottom: 32px;
     margin-left: 80px;
   }
+</style>
+
   .hero__buttons { display: flex; gap: 16px; }
   .btn {
     padding: 12px 28px;
@@ -103,6 +113,7 @@ hero_html = """
 
 <div class="hero">
   <div class="hero__overlay"></div>
+  <img class="hero__logo" src="https://raw.githubusercontent.com/masdukibeleks128-coder/deficiency-detection/main/logo/logo utm 300 px.png" alt="logo">
   <div class="hero__content">
     <h1>NUTRISCAN</h1>
     <p>Nutriscan merupakan salah satu project dari mahasiswa Trunojoyo Madura guna untuk meningkatkan digitalisasi pertanian berbasis smart farming.
