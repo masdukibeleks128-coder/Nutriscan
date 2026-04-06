@@ -62,7 +62,7 @@ hero_html = """
 
   .hero {
     position: relative;
-    min-height: 780px;
+    min-height: 700px;
     background-image: url('https://raw.githubusercontent.com/masdukibeleks128-coder/deficiency-detection/main/background.jpeg');
     background-size: cover;
     background-position: center;
@@ -88,7 +88,7 @@ hero_html = """
     position: relative;
     z-index: 2;
     max-width: 600px;
-    padding: 60px 48px; /* atas kanan bawah kiri */
+    padding: 30px 48px; /* atas kanan bawah kiri */
     color: #ffffff;
   }
   .hero__content h1 {
@@ -96,14 +96,14 @@ hero_html = """
     font-size: 42px;
     font-weight: 700;
     line-height: 1.2;
-    margin-bottom: 1px;
+    margin-bottom: 16px;
     margin-left: 80px;
   }
   .hero__content p {
     font-size: 15px;
     line-height: 1.75;
     color: rgba(255,255,255,0.88);
-    margin-bottom: 17px;
+    margin-bottom: 32px;
     margin-left: 80px;
   }
 </style>
