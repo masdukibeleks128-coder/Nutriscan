@@ -71,7 +71,7 @@ hero_html = """
     top: 15px;
     left: 100px:
     z-index: 3;
-    width: 5px;
+    width: 50px;
     height:0 auto;
   }
   .hero__content {
