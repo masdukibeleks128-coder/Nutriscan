@@ -67,12 +67,12 @@ hero_html = """
     background: linear-gradient(to right, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.5) 60%, transparent 100%);
   }
   .hero__logo {
-    position: relative;
+    position: absolute;
+    top: 10px;
+    left: 80px:
     z-index: 3;
     width: 45px;
     height: auto;
-    margin-bottom: 8px;
-    margin-left: 80px;
   }
   .hero__content {
     position: relative;
