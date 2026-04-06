@@ -68,11 +68,11 @@ hero_html = """
   }
   .hero__logo {
     position: absolute;
-    top: 10px;
-    left: 80px:
+    top: 15px;
+    left: 100px:
     z-index: 3;
-    width: 45px;
-    height: auto;
+    width: 5px;
+    height:0 auto;
   }
   .hero__content {
     position: relative;
