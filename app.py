@@ -67,9 +67,9 @@ hero_html = """
     background: linear-gradient(to right, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.5) 60%, transparent 100%);
   }
   .hero__logo {
-    position: absolute;
+    position: relative;
     z-index: 3;
-    width: 30px;
+    width: 45px;
     height: auto;
     margin-bottom: 8px;
     margin-left: 80px;
