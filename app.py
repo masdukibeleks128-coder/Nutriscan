@@ -27,26 +27,92 @@ if YOLO_AVAILABLE :
     
     torch.serialization.add_safe_globals([DetectionModel])
 
-st.set_page_config(page_title="pengenalan defisiensi",
+st.set_page_config(page_title="Nutriscan",
                    layout="wide")
+# app.py
+import streamlit as st
+
+st.set_page_config(layout="wide", page_title="Nutriscan")
+
+# Hapus padding bawaan Streamlit
+st.markdown("""
+<style>
+  .block-container { padding-top: 0 !important; }
+</style>
+""", unsafe_allow_html=True)
+
+hero_html = """
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@400;600&display=swap');
+
+  .hero {
+    position: relative;
+    min-height: 480px;
+    background-image: url('https://raw.githubusercontent.com/masdukibeleks128-coder/deficiency-detection/main/background.jpeg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+  .hero__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(10,42,110,0.92) 0%, rgba(10,42,110,0.5) 60%, transparent 100%);
+  }
+  .hero__content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    padding: 60px 48px;
+    color: #ffffff;
+  }
+  .hero__content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+  .hero__content p {
+    font-size: 15px;
+    line-height: 1.75;
+    color: rgba(255,255,255,0.88);
+    margin-bottom: 32px;
+  }
+  .hero__buttons { display: flex; gap: 16px; }
+  .btn {
+    padding: 12px 28px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: 'Source Sans 3', sans-serif;
+  }
+  .btn--primary { background: #fff; color: #0a2a6e; }
+  .btn--secondary { border: 1.5px solid rgba(255,255,255,0.6); color: #fff; }
+</style>
+
+<div class="hero">
+  <div class="hero__overlay"></div>
+  <div class="hero__content">
+    <h1>NUTRISCAN</h1>
+    <p>Nutriscan merupakan salah satu project dari mahasiswa Trunojoyo Madura guna untuk meningkatkan digitalisasi pertanian berbasis smart farming.
+    Project tersebut berbasis deep learning dimana nantinya pengguna hanya memerlukan foto daun tanaman, yang dimana akan langsung dideteksi oleh model.
+    Tingkatkan hasil panen dengan diagnosis nutrisi yang akurat. Scan gejala kekurangan hara langsung di lapangan tanpa perlu menunggu hasil lab yang lama.
+    </p>
+    </div>
+  </div>
+</div>
+"""
+
+st.markdown(hero_html, unsafe_allow_html=True)
 
 bg_url = "https://raw.githubusercontent.com/masdukibeleks128-coder/deficiency-detection/main/background.jpeg"
 front_url = "https://raw.githubusercontent.com/masdukibeleks128-coder/deficiency-detection/main/background.jpeg"
 logo_utm_url = "https://raw.githubusercontent.com/masdukibeleks128-coder/deficiency-detection/main/logo/logo utm 300 px.png" 
 logo_fp_url = "https://raw.githubusercontent.com/masdukibeleks128-coder/deficiency-detection/main/logo/logo FP 300px.png"
-# Background dari website
-page_bg = f"""
-<style>
-[data-testid="stAppViewContainer"] {{
-    background-image: url("{bg_url}");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}}
-</style>
-"""
-
-st.markdown(page_bg, unsafe_allow_html=True)
 
 # periksa apakah library YOLO tersedia
 def cek_library():
@@ -58,12 +124,6 @@ def cek_library():
 
 # text tulisan utama
 st.markdown(f"""
-<div style="
-            background-color: rgba(69, 75, 27, 0.7);
-            padding: 20px;
-            text-align: center;
-            position: relative;
-            margin-top: 30px;">
     <div style="
             position: absolute;
             top: -37px;
@@ -76,11 +136,6 @@ st.markdown(f"""
             align-items: center:
             justify-content: center;">
     </div>
-<img src="{front_url}" style="
-    position: absolute;
-    top: 1px;
-    left: 1px;
-    right: 1px;">
 <img src="{logo_utm_url}" style="
     position: absolute;
     top: -25px;
