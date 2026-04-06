@@ -66,14 +66,14 @@ hero_html = """
     inset: 0;
     background: linear-gradient(to right, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.5) 60%, transparent 100%);
   }
-  .hero__logo {{
+  .hero__logo {
     position: absolute;
-    top: 24px;
-    left: 40px;
     z-index: 3;
-    width: 50px;
+    width: 30px;
     height: auto;
-  }}
+    margin-bottom: 8px;
+    margin-left: 80px;
+  }
   .hero__content {
     position: relative;
     z-index: 2;
@@ -120,7 +120,6 @@ hero_html = """
     Project tersebut berbasis deep learning dimana nantinya pengguna hanya memerlukan foto daun tanaman, yang dimana akan langsung dideteksi oleh model.
     Tingkatkan hasil panen dengan diagnosis nutrisi yang akurat. Scan gejala kekurangan hara langsung di lapangan tanpa perlu menunggu hasil lab yang lama.
     </p>
-    </div>
   </div>
 </div>
 """
