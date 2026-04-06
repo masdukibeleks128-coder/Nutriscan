@@ -72,7 +72,7 @@ hero_html = """
     left: 100px:
     z-index: 3;
     width: 50px;
-    height:0 auto;
+    height: auto;
   }
   .hero__content {
     position: relative;
@@ -96,19 +96,6 @@ hero_html = """
     margin-bottom: 32px;
     margin-left: 80px;
   }
-</style>
-
-  .hero__buttons { display: flex; gap: 16px; }
-  .btn {
-    padding: 12px 28px;
-    border-radius: 999px;
-    font-size: 14px;
-    font-weight: 600;
-    text-decoration: none;
-    font-family: 'Source Sans 3', sans-serif;
-  }
-  .btn--primary { background: #fff; color: #0a2a6e; }
-  .btn--secondary { border: 1.5px solid rgba(255,255,255,0.6); color: #fff; }
 </style>
 
 <div class="hero">
