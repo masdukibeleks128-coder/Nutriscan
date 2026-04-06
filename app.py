@@ -64,13 +64,13 @@ hero_html = """
   .hero__overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to right, rgba(10,42,110,0.92) 0%, rgba(10,42,110,0.5) 60%, transparent 100%);
+    background: linear-gradient(to right, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.5) 60%, transparent 100%);
   }
   .hero__content {
     position: relative;
     z-index: 2;
     max-width: 600px;
-    padding: 60px 48px;
+    padding: 60px 48px; /* atas kanan bawah kiri */
     color: #ffffff;
   }
   .hero__content h1 {
@@ -79,12 +79,14 @@ hero_html = """
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 16px;
+    margin-left: 80px;
   }
   .hero__content p {
     font-size: 15px;
     line-height: 1.75;
     color: rgba(255,255,255,0.88);
     margin-bottom: 32px;
+    margin-left: 80px;
   }
   .hero__buttons { display: flex; gap: 16px; }
   .btn {
