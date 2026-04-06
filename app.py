@@ -79,7 +79,7 @@ hero_html = """
   .hero__logo {
     position: absolute;
     top: 15px;
-    left: 80px;
+    left: 100px;
     z-index: 3;
     width: 50px;
     height: auto;
