@@ -96,14 +96,14 @@ hero_html = """
     font-size: 42px;
     font-weight: 700;
     line-height: 1.2;
-    margin-bottom: 16px;
+    margin-bottom: 1px;
     margin-left: 80px;
   }
   .hero__content p {
     font-size: 15px;
     line-height: 1.75;
     color: rgba(255,255,255,0.88);
-    margin-bottom: 32px;
+    margin-bottom: 17px;
     margin-left: 80px;
   }
 </style>
