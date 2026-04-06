@@ -31,9 +31,15 @@ st.set_page_config(page_title="pengenalan defisiensi",
                    layout="wide")
 
 bg_url = "https://raw.githubusercontent.com/masdukibeleks128-coder/deficiency-detection/main/background.jpeg"
+front_url = "https://raw.githubusercontent.com/masdukibeleks128-coder/deficiency-detection/main/background.jpeg"
 logo_utm_url = "https://raw.githubusercontent.com/masdukibeleks128-coder/deficiency-detection/main/logo/logo utm 300 px.png" 
 logo_fp_url = "https://raw.githubusercontent.com/masdukibeleks128-coder/deficiency-detection/main/logo/logo FP 300px.png"
 # Background dari website
+<img src="{front_url}" style="
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    right: 1px;">
 page_bg = f"""
 <style>
 [data-testid="stAppViewContainer"] {{
