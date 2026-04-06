@@ -105,6 +105,8 @@ hero_html = """
     color: rgba(255,255,255,0.88);
     margin-bottom: 32px;
     margin-left: 80px;
+    text-align: justify;  /* untuk mengatur jenis teks rata kanan kiri */
+    hyphens: auto; /* agar penggalan kata lebih rapi di hp */
   }
 </style>
 
