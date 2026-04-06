@@ -10,6 +10,16 @@ import os
 import tempfile
 import shutil
 import importlib.util
+
+# Kode untuk menyembunyikan header dan footer
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            header {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
 # import YOLO
 
 def cek_library_ultralytics():
