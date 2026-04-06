@@ -81,6 +81,11 @@ st.markdown(f"""
             align-items: center:
             justify-content: center;">
     </div>
+<img src="{front_url}" style="
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    right: 1px;">
 <img src="{logo_utm_url}" style="
     position: absolute;
     top: -25px;
