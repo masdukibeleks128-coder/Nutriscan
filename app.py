@@ -192,23 +192,26 @@ if cek_library():
                         st.markdown("""
                         <style>
                           /* Mobile : kolom tetap berdampingan tapi lebih kecil */
-                            [data-testid="stHorizontalBlock"] {
-                              flex-wrap: nowrap !important;
+                          @media (max-width: 768px) {  
+                            [data-testid="stImage"] img {
+                              min-width: 100% !important;
+                              height: auto !important;
                             }
                             [data-testid="column"] {
                               min-width: 0 !important;
-                              flex: 1 !important;
+                              padding: 4px !important;
                             }
+                          }
                         </style>
                         """, unsafe_allow_html=True)
                         # membandingkan hasil prediksi dan gambar awal
                         col1, col2 = st.columns(2)
                         with col1:
                           st.subheader("Gambar Asli")
-                          st.image(image, width=250)
+                          st.image(image, width=200)
                         with col2:
                           st.subheader("Hasil Deteksi")
-                          st.image(hasil[0].plot(), width=250)
+                          st.image(hasil[0].plot(), width=200)
 
                 except Exception as e:
                     st.error("Gambar tidak dapat terdeteksi")
