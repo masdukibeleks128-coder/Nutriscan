@@ -191,16 +191,26 @@ if cek_library():
 
                         st.markdown("""
                         <style>
-                          /* Mobile : kolom tetap berdampingan tapi lebih kecil */
-                          @media (max-width: 768px) {  
-                            [data-testid="stImage"] img {
-                              min-width: 100% !important;
+                          /* Desktop : berdampingan ukuran sedang */
+                          @media (min-width: 480px) {  
+                            [data-testid="stHorizontalBlock"] [data-testid="stImage"] img {
+                              width: 250px !important;
                               height: auto !important;
+                            }
+                          }
+                          /* Mobile: tetap berdampingan tapi kecil */
+                          @media (max-width: 480px) {
+                            [data-testid="stHorizontalBlock"] {
+                              flex-warp: nowarp !important;
                             }
                             [data-testid="column"] {
                               min-width: 0 !important;
+                              flex: 1 !important;
                               padding: 4px !important;
                             }
+                            [data-testid="stHorizontalBlock"] [data-testid="stImage"] img {
+                              width: 100% !important;
+                              height: auto !important;
                           }
                         </style>
                         """, unsafe_allow_html=True)
@@ -208,10 +218,10 @@ if cek_library():
                         col1, col2 = st.columns(2)
                         with col1:
                           st.subheader("Gambar Asli")
-                          st.image(image, width=200)
+                          st.image(image, use_column_width=True)
                         with col2:
                           st.subheader("Hasil Deteksi")
-                          st.image(hasil[0].plot(), width=200)
+                          st.image(hasil[0].plot(), use_column_width=True)
 
                 except Exception as e:
                     st.error("Gambar tidak dapat terdeteksi")
