@@ -201,7 +201,7 @@ if cek_library():
                           /* Mobile: tetap berdampingan tapi kecil */
                           @media (max-width: 480px) {
                             [data-testid="stHorizontalBlock"] {
-                              flex-warp: nowarp !important;
+                              flex-wrap: nowrap !important;
                             }
                             [data-testid="column"] {
                               min-width: 0 !important;
@@ -211,6 +211,7 @@ if cek_library():
                             [data-testid="stHorizontalBlock"] [data-testid="stImage"] img {
                               width: 100% !important;
                               height: auto !important;
+                            }
                           }
                         </style>
                         """, unsafe_allow_html=True)
