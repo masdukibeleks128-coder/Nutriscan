@@ -36,11 +36,11 @@ st.markdown("""
   @media (max-width: 480px) {
     .hero { min-height: 400px; padding-top: 16px; }
     .hero__overlay {
-      background: rgba(0,0,0,0.75) !important;
+      background: transparent !important;
     }
     .hero__content { padding: 0 16px; max-width: 100%; }
-    .hero__content h1 { font-size: 26px; margin-left: 5px; }
-    .hero__content p { font-size: 13px; margin-left: 5px; }
+    .hero__content h1 { font-size: 26px; margin-left: 5px; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);}
+    .hero__content p { font-size: 13px; margin-left: 5px; text-shadow: 1px 1px 3px rgba(0,0,0,0.8);}
     .hero__logos { margin-left: 5px; }
     .hero__logos img { width: 45px; }
   }
