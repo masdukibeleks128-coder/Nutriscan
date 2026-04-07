@@ -92,7 +92,7 @@ hero_html = """
   .hero__content {
     position: relative;
     z-index: 2;
-    max-width: 600px;
+    max-width: 800px;
     padding: 0px 48px; /* atas kanan bawah kiri */
     color: #ffffff;
   }
