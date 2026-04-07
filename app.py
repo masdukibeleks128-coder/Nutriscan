@@ -192,16 +192,13 @@ if cek_library():
                         st.markdown("""
                         <style>
                           /* Mobile : kolom tetap berdampingan tapi lebih kecil */
-                          @media (max-width: 768px) {
-                            [data-testid="stImage"] img {
-                              max-width: 100% !important;
-                              height: auto !important;
+                            [data-testid="stHorizontalBlock"] {
+                              flex-wrap: nowrap !important;
                             }
                             [data-testid="column"] {
                               min-width: 0 !important;
-                              padding: 4px !important;
+                              flex: 1 !important;
                             }
-                          }
                         </style>
                         """, unsafe_allow_html=True)
                         # membandingkan hasil prediksi dan gambar awal
