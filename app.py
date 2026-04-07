@@ -220,7 +220,7 @@ if cek_library():
                         <style>
                           /* Desktop : berdampingan ukuran sedang */
                           @media (min-width: 481px) {  
-                            [data-testid="stHorizontalBlock"] {data-testid="column"] {
+                            [data-testid="stHorizontalBlock"] [data-testid="column"] {
                               display: flex !important;
                               flex-direction: column !important;
                               align-items: center !important;
