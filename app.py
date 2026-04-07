@@ -192,7 +192,7 @@ if cek_library():
                         st.markdown("""
                         <style>
                           /* Desktop : berdampingan ukuran sedang */
-                          @media (min-width: 480px) {  
+                          @media (min-width: 481px) {  
                             [data-testid="stHorizontalBlock"] [data-testid="stImage"] img {
                               width: 250px !important;
                               height: auto !important;
