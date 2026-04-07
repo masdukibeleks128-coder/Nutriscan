@@ -78,10 +78,10 @@ hero_html = """
   }
   .hero__logos {
     display: flex;
-    align-item: center;
+    align-items: center;
     gap: 12px;
     margin-left: 50px;
-    margin-botom: 20px;
+    margin-bottom: 20px;
   }
   .hero__logos img {
     width: 70px;
@@ -120,7 +120,7 @@ hero_html = """
   
     <div class="hero__logos">
       <img src="https://raw.githubusercontent.com/masdukibeleks128-coder/deficiency-detection/main/logo/logo utm 300 px.png" alt="logo utm">
-      <img src="https://raw.githubusercontent.com/masdukibeleks128-coder/deficiency-detection/main/logo/logo FP 300px.png" alt="logo fp"
+      <img src="https://raw.githubusercontent.com/masdukibeleks128-coder/deficiency-detection/main/logo/logo FP 300px.png" alt="logo fp">
     </div>
   
     <h1>NUTRISCAN</h1>
