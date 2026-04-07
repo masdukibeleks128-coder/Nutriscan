@@ -119,8 +119,8 @@ hero_html = """
   <div class="hero__content">
   
     <div class="hero__logos">
-      <img src="https://raw.githubusercontent.com/masdukibeleks128-coder/deficiency-detection/main/logo/logo utm 300 px.png" alt="logo utm">
-      <img src="https://raw.githubusercontent.com/masdukibeleks128-coder/deficiency-detection/main/logo/logo FP 300px.png" alt="logo fp">
+      <img src="https://raw.githubusercontent.com/masdukibeleks128-coder/Nutriscan/main/logo/logo_utm_300px.png" alt="logo utm">
+      <img src="https://raw.githubusercontent.com/masdukibeleks128-coder/Nutriscan/main/logo/logo_FP_300px.png" alt="logo fp">
     </div>
   
     <h1>NUTRISCAN</h1>
