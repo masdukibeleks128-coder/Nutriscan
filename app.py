@@ -69,7 +69,8 @@ hero_html = """
     border-radius: 12px;
     overflow: hidden;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    padding-top: 30px;
   }
   .hero__overlay {
     position: absolute;
