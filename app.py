@@ -98,14 +98,14 @@ hero_html = """
     line-height: 1.2;
     margin-top: -30px;
     margin-bottom: 16px;
-    margin-left: 80px;
+    margin-left: 50px;
   }
   .hero__content p {
     font-size: 15px;
     line-height: 1.75;
     color: rgba(255,255,255,0.88);
     margin-bottom: 32px;
-    margin-left: 80px;
+    margin-left: 50px;
     text-align: justify;  /* untuk mengatur jenis teks rata kanan kiri */
     hyphens: auto; /* agar penggalan kata lebih rapi di hp */
   }
