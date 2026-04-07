@@ -129,6 +129,33 @@ hero_html = """
 """
 st.markdown(hero_html, unsafe_allow_html=True)
 
+# ===== Margin Section =====
+st.markdown("""
+<style>
+@media (min-width: 481px) {
+  [data-testid="stFileUploader"],
+  [data-testid="stImage"],
+  [data-testid="stButton"],
+  [data-testid="stHorizontalBlock"],
+  [data-testid="stPlotlyChart"],
+  [data-testid="stAlert"] {
+    margin-left: 30px !important;
+    margin-right: 30px !important;
+  }
+}
+@media (max-width: 480px) {
+  [data-testid="stFileUploader"],
+  [data-testid="stImage"],
+  [data-testid="stButton"],
+  [data-testid="stHorizontalBlock"],
+  [data-testid="stPlotlyChart"],
+  [data-testid="stAlert"] {
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+  }
+}
+</style>
+""", unsafe_allow_html=True)
 # ===== FITUR UTAMA =====
 def cek_library():
     if not YOLO_AVAILABLE:
