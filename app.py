@@ -220,6 +220,11 @@ if cek_library():
                         <style>
                           /* Desktop : berdampingan ukuran sedang */
                           @media (min-width: 481px) {  
+                            [data-testid="stHorizontalBlock"] {data-testid="column"] {
+                              display: flex !important;
+                              flex-direction: column !important;
+                              align-items: center !important;
+                            }
                             [data-testid="stHorizontalBlock"] [data-testid="stImage"] img {
                               width: 250px !important;
                               height: auto !important;
@@ -233,13 +238,16 @@ if cek_library():
                             }
                             [data-testid="column"] {
                               min-width: 0 !important;
-                              flex: 1 1 45% !important; # masing-masing 50% layar
+                              flex: 1 1 50% !important; # masing-masing 50% layar
                               padding: 2px !important;
+                              display: flex !important;
+                              flex-direction: column !important;
+                              align-items: center !important;
                             }
                             [data-testid="stHorizontalBlock"] [data-testid="stImage"] img {
                               width: 100% !important;
                               height: auto !important;
-                              max-width: 180px !important;
+                              max-width: 140px !important;
                             }
                           }
                         </style>
