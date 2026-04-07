@@ -24,7 +24,7 @@ st.markdown("""
   }
 
   /* ===== DESKTOP ===== */
-  @media (min-width: 768px) {
+  @media (min-width: 480px) {
     .hero { min-height: 500px; }
     .hero__content h1 { font-size: 42px; margin-left: 50px; }
     .hero__content p { font-size: 16px; margin-left: 50px; }
@@ -33,7 +33,7 @@ st.markdown("""
   }
 
   /* ===== MOBILE ===== */
-  @media (max-width: 768px) {
+  @media (max-width: 480px) {
     .hero { min-height: 400px; padding-top: 16px; }
     .hero__overlay {
       background: rgba(0,0,0,0.75) !important;
