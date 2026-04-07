@@ -106,7 +106,7 @@ hero_html = """
     margin-left: 50px;
   }
   .hero__content p {
-    font-size: 15px;
+    font-size: 18px;
     line-height: 1.75;
     color: rgba(255,255,255,0.88);
     margin-bottom: 32px;
