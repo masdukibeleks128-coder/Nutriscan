@@ -117,16 +117,15 @@ hero_html = """
 <div class="hero">
   <div class="hero__overlay"></div>
   <div class="hero__content">
-  
     <div class="hero__logos">
       <img src="https://raw.githubusercontent.com/masdukibeleks128-coder/Nutriscan/main/logo/logo_utm_300px.png" alt="logo utm">
       <img src="https://raw.githubusercontent.com/masdukibeleks128-coder/Nutriscan/main/logo/logo_FP_300px.png" alt="logo fp">
     </div>
-  
     <h1>NUTRISCAN</h1>
     <p>Nutriscan merupakan salah satu project dari mahasiswa Trunojoyo Madura guna untuk meningkatkan digitalisasi pertanian berbasis smart farming.
     Project tersebut berbasis deep learning dimana nantinya pengguna hanya memerlukan foto daun tanaman, yang dimana akan langsung dideteksi oleh model.
-    Tingkatkan hasil panen dengan diagnosis nutrisi yang akurat. Scan gejala kekurangan hara langsung di lapangan tanpa perlu menunggu hasil lab yang lama.</p>
+    Tingkatkan hasil panen dengan diagnosis nutrisi yang akurat. Scan gejala kekurangan hara langsung di lapangan tanpa perlu menunggu hasil lab yang lama.
+    </p>
   </div>
 </div>
 """
