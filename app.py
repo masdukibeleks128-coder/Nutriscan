@@ -80,6 +80,7 @@ hero_html = """
     display: flex;
     align-items: center;
     gap: 12px;
+    margin-toop: 30px:
     margin-left: 50px;
     margin-bottom: 20px;
   }
