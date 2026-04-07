@@ -133,10 +133,10 @@ hero_html = """
 
 st.markdown(hero_html, unsafe_allow_html=True)
 
-bg_url = "https://raw.githubusercontent.com/masdukibeleks128-coder/deficiency-detection/main/background.jpeg"
-front_url = "https://raw.githubusercontent.com/masdukibeleks128-coder/deficiency-detection/main/background.jpeg"
-logo_utm_url = "https://raw.githubusercontent.com/masdukibeleks128-coder/deficiency-detection/main/logo/logo utm 300 px.png" 
-logo_fp_url = "https://raw.githubusercontent.com/masdukibeleks128-coder/deficiency-detection/main/logo/logo FP 300px.png"
+bg_url = "https://raw.githubusercontent.com/masdukibeleks128-coder/Nutriscan/main/background.jpeg"
+front_url = "https://raw.githubusercontent.com/masdukibeleks128-coder/Nutriscan/main/background.jpeg"
+logo_utm_url = "https://raw.githubusercontent.com/masdukibeleks128-coder/Nutriscan/main/logo/logo_utm_300px.png" 
+logo_fp_url = "https://raw.githubusercontent.com/masdukibeleks128-coder/Nutriscan/main/logo/logo_FP_300px.png"
 
 # periksa apakah library YOLO tersedia
 def cek_library():
