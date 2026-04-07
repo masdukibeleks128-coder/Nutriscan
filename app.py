@@ -225,6 +225,12 @@ if cek_library():
                               flex-direction: column !important;
                               align-items: center !important;
                             }
+                            [data-testid="stHorizontalBlock"] [daya-testid="column"] > div
+                              display: flex !important;
+                              flex-direction: column !important;
+                              align-items: center !important;
+                              width: 100% !important;
+                            }
                             [data-testid="stHorizontalBlock"] [data-testid="stImage"] img {
                               width: 250px !important;
                               height: auto !important;
@@ -234,7 +240,7 @@ if cek_library():
                           @media (max-width: 480px) {
                             [data-testid="stHorizontalBlock"] {
                               flex-wrap: wrap !important;
-                              overflow: hidden !important; # cegah scroll kanan
+                              overflow: hidden !important; /* cegah scroll kanan */
                             }
                             [data-testid="column"] {
                               min-width: 0 !important;
@@ -243,6 +249,17 @@ if cek_library():
                               display: flex !important;
                               flex-direction: column !important;
                               align-items: center !important;
+                            }
+                            [data-testid="stHorizontalBlock"] {data-testid="column"] > div
+                              display: flex !important;
+                              flex-direction: column !important;
+                              align-items: center !important;
+                              width: 100% !important;
+                            }
+                            [data-testid="stHorizontalBlock"] [data-testid="stImage"] {
+                              display: flex !important;
+                              justify-content: center !important;
+                              width: 100% !important;
                             }
                             [data-testid="stHorizontalBlock"] [data-testid="stImage"] img {
                               width: 100% !important;
@@ -255,10 +272,10 @@ if cek_library():
                         # membandingkan hasil prediksi dan gambar awal
                         col1, col2 = st.columns(2)
                         with col1:
-                          st.subheader("Gambar Asli")
+                          st.markdown("<p style+'font-size: 14px; text-align: center;'>Gambar Asli</p>", unsafe_allow_html=True)
                           st.image(image, use_column_width=True)
                         with col2:
-                          st.subheader("Hasil Deteksi")
+                          st.markdown("<p style+'font-size: 14px; text-align: center;'>Hasil Deteksi</p>", unsafe_allow_html=True)
                           st.image(hasil[0].plot(), use_column_width=True)
 
                 except Exception as e:
