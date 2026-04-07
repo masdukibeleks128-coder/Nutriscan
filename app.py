@@ -78,7 +78,7 @@ hero_html = """
   }
   .hero__logo {
     position: absolute;
-    top: 15px;
+    top: 25px;
     left: 108px;
     z-index: 3;
     width: 70px;
