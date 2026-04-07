@@ -88,7 +88,7 @@ hero_html = """
     position: relative;
     z-index: 2;
     max-width: 600px;
-    padding: 30px 48px; /* atas kanan bawah kiri */
+    padding: 10px 48px; /* atas kanan bawah kiri */
     color: #ffffff;
   }
   .hero__content h1 {
