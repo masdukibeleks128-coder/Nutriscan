@@ -83,7 +83,7 @@ hero_html = """
     gap: 12px;
     margin-top: 30px;
     margin-left: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 120px;
   }
   .hero__logos img {
     width: 70px;
