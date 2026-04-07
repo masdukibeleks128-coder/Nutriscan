@@ -202,15 +202,17 @@ if cek_library():
                           @media (max-width: 480px) {
                             [data-testid="stHorizontalBlock"] {
                               flex-wrap: nowrap !important;
+                              overflow: hidden !important; # cegah scroll kanan
                             }
                             [data-testid="column"] {
                               min-width: 0 !important;
-                              flex: 1 !important;
+                              flex: 1 1 50% !important; # masing-masing 50% layar
                               padding: 4px !important;
                             }
                             [data-testid="stHorizontalBlock"] [data-testid="stImage"] img {
                               width: 100% !important;
                               height: auto !important;
+                              max-width: 100% !important;
                             }
                           }
                         </style>
