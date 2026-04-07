@@ -189,14 +189,29 @@ if cek_library():
                         st.success(f"Defisiensi terdeteksi: {objek_terdeteksi}")
                         st.plotly_chart(grafik)
 
+                        st.markdown("""
+                        <style>
+                          /* Mobile : kolom tetap berdampingan tapi lebih kecil */
+                          @media (max-width: 768px) {
+                            [data-testid="stImage"] img {
+                              max-width: 100% !important;
+                              height: auto !important;
+                            }
+                            [data-testid="column"] {
+                              min-width: 0 !important;
+                              padding: 4px !important;
+                            }
+                          }
+                        </style>
+                        """, unsafe_allow_html=True)
                         # membandingkan hasil prediksi dan gambar awal
                         col1, col2 = st.columns(2)
                         with col1:
                           st.subheader("Gambar Asli")
-                          st.image(image, use_column_width=True)
+                          st.image(image, width=250)
                         with col2:
                           st.subheader("Hasil Deteksi")
-                          st.image(hasil[0].plot(), caption="Hasil Deteksi", use_container_width=True)
+                          st.image(hasil[0].plot(), width=250)
 
                 except Exception as e:
                     st.error("Gambar tidak dapat terdeteksi")
