@@ -225,7 +225,7 @@ if cek_library():
                               flex-direction: column !important;
                               align-items: center !important;
                             }
-                            [data-testid="stHorizontalBlock"] [daya-testid="column"] > div
+                            [data-testid="stHorizontalBlock"] [data-testid="column"] > div {
                               display: flex !important;
                               flex-direction: column !important;
                               align-items: center !important;
@@ -250,7 +250,7 @@ if cek_library():
                               flex-direction: column !important;
                               align-items: center !important;
                             }
-                            [data-testid="stHorizontalBlock"] {data-testid="column"] > div
+                            [data-testid="stHorizontalBlock"] [data-testid="column"] > div {
                               display: flex !important;
                               flex-direction: column !important;
                               align-items: center !important;
