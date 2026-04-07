@@ -26,9 +26,9 @@ st.markdown("""
   /* ===== DESKTOP ===== */
   @media (min-width: 480px) {
     .hero { min-height: 500px; }
-    .hero__content h1 { font-size: 42px; margin-left: 50px; }
-    .hero__content p { font-size: 16px; margin-left: 50px; }
-    .hero__logos { margin-left: 50px; }
+    .hero__content h1 { font-size: 42px; margin-left: 25px; }
+    .hero__content p { font-size: 16px; margin-left: 25px; }
+    .hero__logos { margin-left: 25px; }
     .hero__logos img { width: 70px; }
   }
 
@@ -39,9 +39,9 @@ st.markdown("""
       background: rgba(0,0,0,0.75) !important;
     }
     .hero__content { padding: 0 16px; max-width: 100%; }
-    .hero__content h1 { font-size: 26px; margin-left: 16px; }
-    .hero__content p { font-size: 13px; margin-left: 16px; }
-    .hero__logos { margin-left: 16px; }
+    .hero__content h1 { font-size: 26px; margin-left: 8px; }
+    .hero__content p { font-size: 13px; margin-left: 8px; }
+    .hero__logos { margin-left: 8px; }
     .hero__logos img { width: 45px; }
   }
 </style>
