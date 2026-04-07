@@ -70,7 +70,7 @@ hero_html = """
     overflow: hidden;
     display: flex;
     align-items: flex-start;
-    padding-top: 30px;
+    padding-top: 25px;
   }
   .hero__overlay {
     position: absolute;
@@ -83,7 +83,7 @@ hero_html = """
     gap: 12px;
     margin-top: 30px;
     margin-left: 50px;
-    margin-bottom: 120px;
+    margin-bottom: 110px;
   }
   .hero__logos img {
     width: 70px;
