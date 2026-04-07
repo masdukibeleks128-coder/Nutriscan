@@ -36,7 +36,7 @@ st.markdown("""
   @media (max-width: 480px) {
     .hero { min-height: 400px; padding-top: 16px; }
     .hero__overlay {
-      background: rgba(0,0,0,0.75) 40% !important;
+      background: rgba(0,0,0,0.45) 40% !important;
     }
     .hero__content { padding: 0 16px; max-width: 100%; }
     .hero__content h1 { font-size: 26px; margin-left: 5px; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);}
