@@ -96,7 +96,7 @@ hero_html = """
     font-size: 42px;
     font-weight: 700;
     line-height: 1.2;
-    margin-bottom: 16px;
+    margin-bottom: -5px;
     margin-left: 80px;
   }
   .hero__content p {
