@@ -207,12 +207,12 @@ if cek_library():
                             [data-testid="column"] {
                               min-width: 0 !important;
                               flex: 1 1 45% !important; # masing-masing 50% layar
-                              padding: 4px !important;
+                              padding: 2px !important;
                             }
                             [data-testid="stHorizontalBlock"] [data-testid="stImage"] img {
                               width: 100% !important;
                               height: auto !important;
-                              max-width: 100% !important;
+                              max-width: 180px !important;
                             }
                           }
                         </style>
