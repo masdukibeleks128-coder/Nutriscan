@@ -201,12 +201,12 @@ if cek_library():
                           /* Mobile: tetap berdampingan tapi kecil */
                           @media (max-width: 480px) {
                             [data-testid="stHorizontalBlock"] {
-                              flex-wrap: nowrap !important;
+                              flex-wrap: wrap !important;
                               overflow: hidden !important; # cegah scroll kanan
                             }
                             [data-testid="column"] {
                               min-width: 0 !important;
-                              flex: 1 1 50% !important; # masing-masing 50% layar
+                              flex: 1 1 45% !important; # masing-masing 50% layar
                               padding: 4px !important;
                             }
                             [data-testid="stHorizontalBlock"] [data-testid="stImage"] img {
