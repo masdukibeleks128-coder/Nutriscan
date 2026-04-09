@@ -327,16 +327,17 @@ if cek_library():
                               <style>
                               .kotak-rekomendasi {
                                 padding: 15px;
+                                padding-right: 40px;
                                 border-radius: 8px;
                                 font-size: 25px;
                                 color: white;
+                                line-height: 1.6;
+                                text-align: justify;
                                 word-wrap: break-word;
                                 word-break: break-word;
                                 overflow-wrap: break-word;
                                 white-space: normal;
                                 max-width: 100%;
-                                line-height: 1.6;
-                                text-align: justify;
                                 box-sizzing: border-box !important;
                               }
                               </style>
