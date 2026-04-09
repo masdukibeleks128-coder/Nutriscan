@@ -97,7 +97,7 @@ hero_html = """
     position: relative;
     z-index: 2;
     max-width: 800px;
-    padding: 0px 48px;
+    padding: 0px 16px;
     color: #ffffff;
   }
   .hero__content h1 {
