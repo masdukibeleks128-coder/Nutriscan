@@ -43,8 +43,8 @@ st.markdown("""
         rgba(0,0,0,0.4) 30%, /* tengah */
         rgba(0,0,0,0.4) 70%, /* tengah */
         rgba(0,0,0,0.9) 100% /* bawah gelap */
-      ),
-      rgba(0,0,0,0.5);
+      ) !important,
+      rgba(0,0,0,0.5) !important;
     }
     .hero__content { padding: 0 16px; max-width: 100%; }
     .hero__content h1 { font-size: 26px; margin-left: 5px; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);}
