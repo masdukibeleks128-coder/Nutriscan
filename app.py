@@ -91,7 +91,14 @@ hero_html = """
   .hero__overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 40%, transparent 100%);
+    background: 
+      linear-gradient(
+        to right, 
+        rgba(0,0,0,1) 0%, 
+        rgba(0,0,0,1) 40%, 
+        transparent 100%),
+      
+      url('https://raw.githubusercontent.com/masdukibeleks128-coder/Nutriscan/main/pattern.png');
   }
   .hero__logos {
     display: flex;
