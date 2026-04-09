@@ -283,14 +283,6 @@ if cek_library():
                               width: 250px !important;
                               height: auto !important;
                             }
-                            [data-testid="stHorizontalBlock"] [data-testid="column"]:nth-child(2) {
-                              overflow-wrap: break-word !important;
-                              overflow: hidden !important;
-                              max-width: 50% !important;
-                              word-break: break-word !important;
-                              white-space: normal !important;
-                              font-size: 36px !important;
-                            }
                           }
                           /* Mobile: tetap berdampingan tapi kecil */
                           @media (max-width: 480px) {
@@ -341,11 +333,14 @@ if cek_library():
                                 border-radius: 8px;
                                 font-size: 15px;
                                 color: white;
+                                word-wrap: break-word;
                                 word-break: break-word;
                                 overflow-wrap: break-word;
+                                white-space: normal;
                                 max-width: 100%;
                                 line-height: 1.6;
                                 text-align: justify;
+                                max-width: 500px;
                               }
                               </style>
                           """, unsafe_allow_html=True)
