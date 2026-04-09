@@ -243,7 +243,8 @@ if cek_library():
                             title='Tingkat Keyakinan Deteksi',
                             xaxis_title='Defisiensi Hara',
                             yaxis_title='Tingkat Keyakinan',
-                            height=200
+                            height=200px,
+                            width=1000px
                         )
 
                         st.success(f"Defisiensi terdeteksi: {objek_terdeteksi}")
