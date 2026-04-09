@@ -322,7 +322,7 @@ if cek_library():
                         """, unsafe_allow_html=True)
 
                     # teks dengan label rekomendasi
-                        col1, col2 = st.columns(2)
+                        col1, col2 = st.columns([1, 1.5])
                         with col1:
                           st.markdown("<p style='font-size: 14px; text-align: center;'>Hasil Deteksi</p>", unsafe_allow_html=True)
                           st.image(hasil[0].plot(), use_column_width=True)
