@@ -289,7 +289,7 @@ if cek_library():
                               max-width: 50% !important;
                               word-break: break-word !important;
                               white-space: normal !important;
-                              font-size: 20px !important;
+                              font-size: 36px !important;
                             }
                           }
                           /* Mobile: tetap berdampingan tapi kecil */
