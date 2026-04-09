@@ -259,16 +259,6 @@ if cek_library():
                           "Nutrient_Sufficiency": None
                         }
 
-                        info = rekomendasi.get(objek_terdeteksi)
-
-                        if info is None:
-                          st.info("Berdasarkan hasil deteksi model, tanaman tidak menunjukkan gejala defisiensi hara.Tidak diperlukan penambahan pupuk khusus.")
-                        else:
-                          st.warning(
-                            f"Berdasarkan hasil deteksi model, tanaman menunjukkan gejala {info['gejala']},"
-                            f"maka diperlukan penambahan {info['pupuk']}."
-                          )
-                          
                         st.markdown("""
                         <style>
                           /* Desktop : berdampingan ukuran sedang */
@@ -322,11 +312,37 @@ if cek_library():
                           }
                         </style>
                         """, unsafe_allow_html=True)
-                        # membandingkan hasil prediksi dan gambar awal
-                        col1= st.columns(2)
-                        with col1:
-                          st.markdown("<p style='font-size: 14px; text-align: center;'>Hasil Deteksi</p>", unsafe_allow_html=True)
-                          st.image(hasil[0].plot(), use_column_width=True)
+
+                    # teks dengan label rekomendasi
+                    col1, col2 = st.columns(2)
+                    with col1:
+                      st.markdown("<p style='font-size: 14px; text-align: center;'>Hasil Deteksi</p>", unsafe_allow_html=True)
+                      st.image(hasil[0].plot(), use_column_width=True)
+
+                    with col2:
+                      info = rekomendasi.get(objek_terdeteksi)
+                        if info is None:
+                          st.markdown("""
+                              <div style='
+                                padding: 15px;
+                                border-radius: 8px;
+                                font-size: 15px;
+                                color: white;
+                              '>
+                                Berdasarkan hasil deteksi model, tanaman tidak menunjukkan gejala defisiensi hara. maka tidak diperlukan penambahan pupuk khusus.
+                              </div>
+                          """, unsafe_allow_html=True)
+                        else:
+                          st.markdown("""
+                              <div style='
+                                padding: 15px;
+                                border-radius: 8px;
+                                font-size: 15px;
+                                color: white;
+                              '>
+                                Berdasarkan hasil deteksi model, tanaman menunjukkan gejala <strong>{info['gejala']}</strong>, maka diperlukan penambahan <strong>{['pupuk']}</strong>.
+                              </div>
+                          """, unsafe_allow_html=True)
 
                 except Exception as e:
                     st.error("Gambar tidak dapat terdeteksi")
