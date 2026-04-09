@@ -270,21 +270,15 @@ if cek_library():
                         st.markdown("""
                         <style>
                           /* Desktop : berdampingan ukuran sedang */
-                          @media (min-width: 481px) {  
-                            [data-testid="stHorizontalBlock"] [data-testid="column"] {
-                              display: flex !important;
-                              flex-direction: column !important;
-                              align-items: center !important;
+                          @media (min-width: 481px) {
+                            [data-testid="column"] {
+                              padding: 10px !important;
                             }
-                            [data-testid="stHorizontalBlock"] [data-testid="column"] > div {
-                              display: flex !important;
-                              flex-direction: column !important;
-                              align-items: center !important;
-                              width: 100% !important;
-                            }
-                            [data-testid="stHorizontalBlock"] [data-testid="stImage"] img {
-                              width: 250px !important;
+                          /* Paksa gambar hasil deteksi tidak meluber */
+                            [data-testid="stImage"] img {
+                              max-width: 100% !important;
                               height: auto !important;
+                              object-fit: contain;
                             }
                           }
                           /* Mobile: tetap berdampingan tapi kecil */
