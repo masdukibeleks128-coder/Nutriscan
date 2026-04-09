@@ -243,7 +243,7 @@ if cek_library():
                             title='Tingkat Keyakinan Deteksi',
                             xaxis_title='Defisiensi Hara',
                             yaxis_title='Tingkat Keyakinan',
-                            height=200,
+                            height=600,
                             width=1000
                         )
 
