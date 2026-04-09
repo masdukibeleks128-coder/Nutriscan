@@ -359,7 +359,7 @@ if cek_library():
                             """, unsafe_allow_html=True)
                           else:
                             st.markdown(f"""
-                              <div class='kotak-rekomenadi'>
+                              <div class='kotak-rekomendasi'>
                                   Berdasarkan hasil deteksi model, tanaman menunjukkan gejala <strong>{info['gejala']}</strong>, 
                                   maka diperlukan penambahan <strong>{info['pupuk']}</strong>.
                               </div>
