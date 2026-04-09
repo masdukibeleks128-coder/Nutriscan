@@ -314,15 +314,15 @@ if cek_library():
                         """, unsafe_allow_html=True)
 
                     # teks dengan label rekomendasi
-                    col1, col2 = st.columns(2)
-                    with col1:
-                      st.markdown("<p style='font-size: 14px; text-align: center;'>Hasil Deteksi</p>", unsafe_allow_html=True)
-                      st.image(hasil[0].plot(), use_column_width=True)
+                        col1, col2 = st.columns(2)
+                        with col1:
+                          st.markdown("<p style='font-size: 14px; text-align: center;'>Hasil Deteksi</p>", unsafe_allow_html=True)
+                          st.image(hasil[0].plot(), use_column_width=True)
 
-                    with col2:
-                      info = rekomendasi.get(objek_terdeteksi)
-                        if info is None:
-                          st.markdown("""
+                        with col2:
+                          info = rekomendasi.get(objek_terdeteksi)
+                          if info is None:
+                            st.markdown("""
                               <div style='
                                 padding: 15px;
                                 border-radius: 8px;
@@ -331,18 +331,18 @@ if cek_library():
                               '>
                                 Berdasarkan hasil deteksi model, tanaman tidak menunjukkan gejala defisiensi hara. maka tidak diperlukan penambahan pupuk khusus.
                               </div>
-                          """, unsafe_allow_html=True)
-                        else:
-                          st.markdown("""
+                            """, unsafe_allow_html=True)
+                          else:
+                            st.markdown(f"""
                               <div style='
                                 padding: 15px;
                                 border-radius: 8px;
                                 font-size: 15px;
                                 color: white;
                               '>
-                                Berdasarkan hasil deteksi model, tanaman menunjukkan gejala <strong>{info['gejala']}</strong>, maka diperlukan penambahan <strong>{['pupuk']}</strong>.
+                                  Berdasarkan hasil deteksi model, tanaman menunjukkan gejala <strong>{info['gejala']}</strong>, maka diperlukan penambahan <strong>{info['pupuk']}</strong>.
                               </div>
-                          """, unsafe_allow_html=True)
+                            """, unsafe_allow_html=True)
 
                 except Exception as e:
                     st.error("Gambar tidak dapat terdeteksi")
