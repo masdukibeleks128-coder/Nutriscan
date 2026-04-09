@@ -65,7 +65,7 @@ hero_html = """
 <style>
   @font-face {
       font-family: 'Aspirer Neue' ;
-      src: url ('assets/fonts/LTAspirerNeue-SemiBold.otf') format('truetype');
+      src: url('https://raw.githubusercontent.com/masdukibeleks128-coder/Nutriscan/main/assets/fonts/LTAspirerNeue-SemiBold.otf') format('opentype');
       font-weight: 700;
   }
   .hero {
