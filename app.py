@@ -329,9 +329,9 @@ if cek_library():
 
                         with col2:
                           info = rekomendasi.get(objek_terdeteksi)
-                          if info is None:
-                            st.markdown("""
-                              <div style='
+                          st.markdown("""
+                              <style>
+                              .kotak-rekomendasi {
                                 padding: 15px;
                                 border-radius: 8px;
                                 font-size: 15px;
@@ -341,24 +341,22 @@ if cek_library():
                                 max-width: 100%;
                                 line-height: 1.6;
                                 text-align: justify;
-                              '>
-                                Berdasarkan hasil deteksi model, tanaman tidak menunjukkan gejala defisiensi hara. maka tidak diperlukan penambahan pupuk khusus.
+                              }
+                              </style>
+                          """, unsafe_allow_html=True)
+                          
+                          if info is None:
+                            st.markdown("""
+                              <div class='kotak-rekomendasi'>
+                                Berdasarkan hasil deteksi model, tanaman tidak menunjukkan gejala defisiensi hara. 
+                                maka tidak diperlukan penambahan pupuk khusus.
                               </div>
                             """, unsafe_allow_html=True)
                           else:
                             st.markdown(f"""
-                              <div style='
-                                padding: 15px;
-                                border-radius: 8px;
-                                font-size: 15px;
-                                color: white;
-                                word-break: break-word;
-                                overflow-wrap: break-word;
-                                max-width: 100%;
-                                line-height: 1.6;
-                                text-align: justify;
-                              '>
-                                  Berdasarkan hasil deteksi model, tanaman menunjukkan gejala <strong>{info['gejala']}</strong>, maka diperlukan penambahan <strong>{info['pupuk']}</strong>.
+                              <div class='kotak-rekomenadi'>
+                                  Berdasarkan hasil deteksi model, tanaman menunjukkan gejala <strong>{info['gejala']}</strong>, 
+                                  maka diperlukan penambahan <strong>{info['pupuk']}</strong>.
                               </div>
                             """, unsafe_allow_html=True)
 
