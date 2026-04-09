@@ -323,11 +323,8 @@ if cek_library():
                         </style>
                         """, unsafe_allow_html=True)
                         # membandingkan hasil prediksi dan gambar awal
-                        col1, col2 = st.columns(2)
+                        col1= st.columns(2)
                         with col1:
-                          st.markdown("<p style='font-size: 14px; text-align: center;'>Gambar Asli</p>", unsafe_allow_html=True)
-                          st.image(image, use_column_width=True)
-                        with col2:
                           st.markdown("<p style='font-size: 14px; text-align: center;'>Hasil Deteksi</p>", unsafe_allow_html=True)
                           st.image(hasil[0].plot(), use_column_width=True)
 
