@@ -96,9 +96,8 @@ hero_html = """
         to right, 
         rgba(0,0,0,1) 0%, 
         rgba(0,0,0,1) 40%, 
-        transparent 100%),
-      
-      url('https://raw.githubusercontent.com/masdukibeleks128-coder/Nutriscan/main/pattern.png');
+        transparent 100%)
+      ;
   }
   .hero__logos {
     display: flex;
