@@ -105,14 +105,14 @@ hero_html = """
     font-weight: 700;
     line-height: 1.1;
     margin-top: 0 !important;
-    margin-bottom: 16px !important;
+    margin-bottom: 1px !important;
   }
   .hero__content h2 {
     font-family: 'Aspirer Neue', serif;
     font-weight: 700;
     line-height: 1.1;
     margin-top: 0 !important;
-    margin-bottom: 2px !important;
+    margin-bottom: 24px !important;
   }
   .hero__content p {
     line-height: 1.75;
