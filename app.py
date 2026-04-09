@@ -109,7 +109,7 @@ hero_html = """
   .hero__content h2 {
     font-family: 'Aspirer Neue', serif;
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1;
     margin-bottom: 0px;
   }
   .hero__content p {
