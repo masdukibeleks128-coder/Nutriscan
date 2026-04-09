@@ -242,7 +242,8 @@ if cek_library():
                         grafik.update_layout(
                             title='Tingkat Keyakinan Deteksi',
                             xaxis_title='Defisiensi Hara',
-                            yaxis_title='Tingkat Keyakinan'
+                            yaxis_title='Tingkat Keyakinan',
+                            height=200
                         )
 
                         st.success(f"Defisiensi terdeteksi: {objek_terdeteksi}")
