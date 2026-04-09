@@ -280,6 +280,8 @@ if cek_library():
                             }
                             [data-testid="stHorizontalBlock"] [data-testid="column"]:nth-child(2) {
                               overflow-wrap: break-word !important;
+                              overflow: hidden !important;
+                              max-width: 50% !important;
                               word-break: break-word !important;
                               white-space: normal !important;
                               font-size: 20px !important;
