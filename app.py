@@ -13,6 +13,11 @@ st.set_page_config(page_title="Nutriscan", layout="wide")
 # Sembunyikan header dan footer
 st.markdown("""
 <style>
+  html, body {
+    overflow-x: hidden !important;
+    max-width: 100vw !important;
+  }
+  
   #MainMenu {visibility: hidden;}
   header {visibility: hidden;}
   footer {visibility: hidden;}
