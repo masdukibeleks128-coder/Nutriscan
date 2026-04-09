@@ -276,7 +276,7 @@ if cek_library():
                             }
                           /* Paksa gambar hasil deteksi tidak meluber */
                             [data-testid="stImage"] img {
-                              max-width: 100% !important;
+                              max-width: 50% !important;
                               height: auto !important;
                               object-fit: contain;
                             }
