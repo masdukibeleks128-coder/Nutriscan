@@ -337,7 +337,7 @@ if cek_library():
                                 word-break: break-word;
                                 overflow-wrap: break-word;
                                 white-space: normal;
-                                max-width: 100%;
+                                max-width: 600px;
                                 box-sizzing: border-box !important;
                               }
                               </style>
