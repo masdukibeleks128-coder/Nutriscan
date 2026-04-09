@@ -328,7 +328,7 @@ if cek_library():
                               .kotak-rekomendasi {
                                 padding: 15px;
                                 padding-right: 40px;
-                                border-radius: 8px;
+                                border-radius: 10px;
                                 font-size: 25px;
                                 color: white;
                                 line-height: 1.6;
@@ -337,7 +337,7 @@ if cek_library():
                                 word-break: break-word;
                                 overflow-wrap: break-word;
                                 white-space: normal;
-                                max-width: 600px;
+                                max-width: 600px !important;
                                 box-sizzing: border-box !important;
                               }
                               </style>
