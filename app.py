@@ -248,7 +248,7 @@ if cek_library():
                         )
 
                         st.success(f"Defisiensi terdeteksi: {objek_terdeteksi}")
-                        st.plotly_chart(grafik, use_container_width=True)
+                        st.plotly_chart(grafik)
 
                         rekomendasi = {
                           "N_Deficiency": {
