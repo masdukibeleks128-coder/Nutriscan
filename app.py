@@ -43,7 +43,7 @@ st.markdown("""
         rgba(0,0,0,0.4) 30%, /* tengah */
         rgba(0,0,0,0.4) 70%, /* tengah */
         rgba(0,0,0,0.9) 100% /* bawah gelap */
-      ) !important,
+      ),
       rgba(0,0,0,0.5) !important;
     }
     .hero__content { padding: 0 16px; max-width: 100%; }
