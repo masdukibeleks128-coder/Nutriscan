@@ -243,6 +243,32 @@ if cek_library():
                         st.success(f"Defisiensi terdeteksi: {objek_terdeteksi}")
                         st.plotly_chart(grafik)
 
+                        rekomendasi = {
+                          "N_Deficiency": {
+                            "gejala": "Defisiensi Nitrogen (N)",
+                            "pupuk": "pupuk Urea atau ZA (Nitrogen)"
+                          },
+                          "P_Deficiency": {
+                            "gejala": "Defisiensi Fosfor (P)",
+                            "pupuk": "pupuk SP-36 atau TSP (Fosfor)"
+                          },
+                          "K_Deficiency": {
+                            "gejala": "Defisiensi Kalium (K)",
+                            "pupuk": "pupuk KCL atau ZK (Kalium)"
+                          },
+                          "Nutrient_Sufficiency": None
+                        }
+
+                        info = rekomendasi.get(objek_terdeteksi)
+
+                        if info is None:
+                          st.info("Berdasarkan hasil deteksi model, tanaman tidak menunjukkan gejala defisiensi hara.Tidak diperlukan penambahan pupuk khusus.")
+                        else:
+                          st.warning(
+                            f"Berdasarkan hasil deteksi model, tanaman menunjukkan gejala {info['gejala']},"
+                            f"maka diperlukan penambahan {info['pupuk']}."
+                          )
+                          
                         st.markdown("""
                         <style>
                           /* Desktop : berdampingan ukuran sedang */
