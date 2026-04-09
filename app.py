@@ -63,8 +63,11 @@ if YOLO_AVAILABLE:
 # ===== HERO SECTION =====
 hero_html = """
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@400;600&display=swap');
-
+  @font-face {
+      font-family: 'Aspirer Neue' ;
+      src: url ('assets/fonts/LTAspirerNeue-SemiBold.otf') format('truetype');
+      font-weight: 700;
+  }
   .hero {
     position: relative;
     background-image: url('https://raw.githubusercontent.com/masdukibeleks128-coder/Nutriscan/main/background.jpeg');
@@ -96,7 +99,7 @@ hero_html = """
     color: #ffffff;
   }
   .hero__content h1 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Aspirer Neue', serif;
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 16px;
