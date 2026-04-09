@@ -278,6 +278,12 @@ if cek_library():
                               width: 250px !important;
                               height: auto !important;
                             }
+                            [data-testid="stHorizontalBlock"] [data-testid="column"]:nth-child(2) {
+                              overflow-wrap: break-word !important;
+                              word-break: break-word !important;
+                              white-space: normal !important;
+                              font-size: 20px !important;
+                            }
                           }
                           /* Mobile: tetap berdampingan tapi kecil */
                           @media (max-width: 480px) {
