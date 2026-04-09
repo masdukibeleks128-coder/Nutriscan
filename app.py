@@ -244,11 +244,12 @@ if cek_library():
                             xaxis_title='Defisiensi Hara',
                             yaxis_title='Tingkat Keyakinan',
                             height=600,
-                            width=1000
+                            margin=dict(l=20, r=20, t=50, b=20),
+                            autosize=True
                         )
 
                         st.success(f"Defisiensi terdeteksi: {objek_terdeteksi}")
-                        st.plotly_chart(grafik)
+                        st.plotly_chart(grafik, use_container_width=True)
 
                         rekomendasi = {
                           "N_Deficiency": {
@@ -265,7 +266,7 @@ if cek_library():
                           },
                           "Nutrient_Sufficiency": None
                         }
-
+                        
                         st.markdown("""
                         <style>
                           /* Desktop : berdampingan ukuran sedang */
@@ -333,7 +334,7 @@ if cek_library():
                               .kotak-rekomendasi {
                                 padding: 15px;
                                 border-radius: 8px;
-                                font-size: 15px;
+                                font-size: 25px;
                                 color: white;
                                 word-wrap: break-word;
                                 word-break: break-word;
@@ -342,7 +343,7 @@ if cek_library():
                                 max-width: 100%;
                                 line-height: 1.6;
                                 text-align: justify;
-                                max-width: 500px;
+                                box-sizzing: border-box !important;
                               }
                               </style>
                           """, unsafe_allow_html=True)
