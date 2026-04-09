@@ -72,7 +72,7 @@ hero_html = """
   }
   .hero {
     position: relative;
-    background-image: url('https://raw.githubusercontent.com/masdukibeleks128-coder/Nutriscan/main/background.jpeg');
+    background-image: url('https://raw.githubusercontent.com/masdukibeleks128-coder/Nutriscan/main/background2.jpeg');
     background-size: cover;
     background-position: center;
     border-radius: 12px;
