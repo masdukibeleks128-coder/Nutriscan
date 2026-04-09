@@ -129,6 +129,7 @@ hero_html = """
       <img src="https://raw.githubusercontent.com/masdukibeleks128-coder/Nutriscan/main/logo/logo_FP_300px.png" alt="logo fp">
     </div>
     <h1>NUTRISCAN</h1>
+    <h2>Maize Nutrient Scanner</h2>
     <p>Nutriscan merupakan salah satu project dari mahasiswa Trunojoyo Madura guna untuk
     meningkatkan digitalisasi pertanian berbasis smart farming. Project tersebut berbasis
     deep learning dimana nantinya pengguna hanya memerlukan foto daun tanaman, yang dimana
