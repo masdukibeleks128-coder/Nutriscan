@@ -336,6 +336,11 @@ if cek_library():
                                 border-radius: 8px;
                                 font-size: 15px;
                                 color: white;
+                                word-break: break-word;
+                                overflow-wrap: break-word;
+                                max-width: 100%;
+                                line-height: 1.6;
+                                text-align: justify;
                               '>
                                 Berdasarkan hasil deteksi model, tanaman tidak menunjukkan gejala defisiensi hara. maka tidak diperlukan penambahan pupuk khusus.
                               </div>
@@ -347,6 +352,11 @@ if cek_library():
                                 border-radius: 8px;
                                 font-size: 15px;
                                 color: white;
+                                word-break: break-word;
+                                overflow-wrap: break-word;
+                                max-width: 100%;
+                                line-height: 1.6;
+                                text-align: justify;
                               '>
                                   Berdasarkan hasil deteksi model, tanaman menunjukkan gejala <strong>{info['gejala']}</strong>, maka diperlukan penambahan <strong>{info['pupuk']}</strong>.
                               </div>
