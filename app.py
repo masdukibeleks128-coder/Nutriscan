@@ -27,6 +27,7 @@ st.markdown("""
   @media (min-width: 480px) {
     .hero { min-height: 500px; }
     .hero__content h1 { font-size: 42px; margin-left: 10px; }
+    .hero__content h2 { font-size: 24px; margin-left: 10px; }
     .hero__content p { font-size: 16px; margin-left: 10px; }
     .hero__logos { margin-left: 10px; }
     .hero__logos img { width: 70px; }
@@ -40,6 +41,7 @@ st.markdown("""
     }
     .hero__content { padding: 0 16px; max-width: 100%; }
     .hero__content h1 { font-size: 26px; margin-left: 5px; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);}
+    .hero__content h2 { font-size: 18px; margin-left: 5px; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);}
     .hero__content p { font-size: 13px; margin-left: 5px; text-shadow: 1px 1px 3px rgba(0,0,0,0.8);}
     .hero__logos { margin-left: 5px; }
     .hero__logos img { width: 45px; }
@@ -99,6 +101,12 @@ hero_html = """
     color: #ffffff;
   }
   .hero__content h1 {
+    font-family: 'Aspirer Neue', serif;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+  .hero__content h2 {
     font-family: 'Aspirer Neue', serif;
     font-weight: 700;
     line-height: 1.2;
