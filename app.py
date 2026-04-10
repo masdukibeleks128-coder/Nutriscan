@@ -1,7 +1,6 @@
 import streamlit as st
 from PIL import Image
 import numpy as np
-import plotly.graph_objects as go
 import os
 import tempfile
 import shutil
@@ -234,22 +233,8 @@ if cek_library():
                                 confidence_dict[nama] = float(conf)
 
                         objek_terdeteksi = max(confidence_dict, key=confidence_dict.get)
-
-                        grafik = go.Figure([go.Bar(
-                            x=list(confidence_dict.keys()),
-                            y=list(confidence_dict.values())
-                        )])
-                        grafik.update_layout(
-                            title='Tingkat Keyakinan Deteksi',
-                            xaxis_title='Defisiensi Hara',
-                            yaxis_title='Tingkat Keyakinan',
-                            height=350,
-                            margin=dict(l=20, r=20, t=50, b=20),
-                            autosize=True
-                        )
-
+                        
                         st.success(f"Defisiensi terdeteksi: {objek_terdeteksi}")
-                        st.plotly_chart(grafik, use_container_width=True)
 
                         rekomendasi = {
                           "N_Deficiency": {
