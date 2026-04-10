@@ -236,6 +236,8 @@ if cek_library():
                         
                         st.success(f"Defisiensi terdeteksi: {objek_terdeteksi}")
 
+                        confidence_tertinggi = confidence_dict[objek_terdeteksi]
+                        
                         rekomendasi = {
                           "N_Deficiency": {
                             "gejala": "Defisiensi Nitrogen (N)",
@@ -338,7 +340,8 @@ if cek_library():
                           else:
                             st.markdown(f"""
                               <div class='kotak-rekomendasi'>
-                                  Berdasarkan hasil deteksi model, tanaman menunjukkan gejala <strong>{info['gejala']}</strong>, 
+                                  Berdasarkan hasil deteksi model, tanaman menunjukkan gejala <strong>{info['gejala']}</strong>
+                                  dengan tingkat keyakinan model sebesar <strong>{confidence_tertinggi*100:.2f}%</strong>, 
                                   maka diperlukan penambahan <strong>{info['pupuk']}</strong>.
                               </div>
                             """, unsafe_allow_html=True)
