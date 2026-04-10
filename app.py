@@ -243,7 +243,7 @@ if cek_library():
                             title='Tingkat Keyakinan Deteksi',
                             xaxis_title='Defisiensi Hara',
                             yaxis_title='Tingkat Keyakinan',
-                            height=400,
+                            height=350,
                             margin=dict(l=20, r=20, t=50, b=20),
                             autosize=True
                         )
