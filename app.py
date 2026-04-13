@@ -187,6 +187,82 @@ st.markdown("""
 }
 </style>
 """, unsafe_allow_html=True)
+# ===== FEEDBACK BANNER =====
+def show_feedback_banner():
+    st.markdown(f"""
+    <style>
+    .feedback-banner {{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        background: white;
+        border: 0.5px solid #e0e0e0;
+        border-left: 3px solid #639922;
+        border-radius: 10px;
+        padding: 14px 16px;
+        margin: 16px 0 8px 0;
+    }}
+    .feedback-banner-left {{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }}
+    .feedback-icon {{
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        background: #EAF3DE;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+    }}
+    .feedback-text p {{
+        font-size: 14px;
+        font-weight: 600;
+        color: #1a1a1a;
+        margin: 0 0 2px 0;
+    }}
+    .feedback-text span {{
+        font-size: 12px;
+        color: #666;
+    }}
+    .feedback-btn {{
+        flex-shrink: 0;
+        font-size: 13px;
+        font-weight: 500;
+        color: white !important;
+        background: #639922;
+        border: none;
+        padding: 8px 14px;
+        border-radius: 8px;
+        cursor: pointer;
+        text-decoration: none !important;
+        white-space: nowrap;
+    }}
+    .feedback-btn:hover {{
+        background: #3B6D11;
+        color: white !important;
+    }}
+    </style>
+
+    <div class="feedback-banner">
+        <div class="feedback-banner-left">
+            <div class="feedback-icon">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M8 1.5C4.41 1.5 1.5 4.41 1.5 8s2.91 6.5 6.5 6.5S14.5 11.59 14.5 8 11.59 1.5 8 1.5zm.5 9.75h-1v-4h1v4zm0-5.5h-1v-1h1v1z" fill="#3B6D11"/>
+                </svg>
+            </div>
+            <div class="feedback-text">
+                <p>Hasil deteksi kurang tepat?</p>
+                <span>Bantu kami tingkatkan akurasi model</span>
+            </div>
+        </div>
+        <a href="{FORM_URL}" target="_blank" class="feedback-btn">Beri Feedback</a>
+    </div>
+    """, unsafe_allow_html=True)
+    
 # ===== FITUR UTAMA =====
 def cek_library():
     if not YOLO_AVAILABLE:
@@ -346,6 +422,8 @@ if cek_library():
                               </div>
                             """, unsafe_allow_html=True)
 
+                        show_feedback_banner()
+                      
                 except Exception as e:
                     st.error("Gambar tidak dapat terdeteksi")
                     st.error(f"Error: {e}")
