@@ -188,6 +188,8 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 # ===== FEEDBACK BANNER =====
+FORM_URL = "https://forms.gle/WKv1E8zT8AeXMiZ28"
+
 def show_feedback_banner():
     st.markdown(f"""
     <style>
