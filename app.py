@@ -199,6 +199,7 @@ def show_feedback_banner():
         justify-content: space-between;
         gap: 12px;
         background: white;
+        max-width: 480 px;
         border: 0.5px solid #e0e0e0;
         border-left: 3px solid #639922;
         border-radius: 10px;
@@ -257,7 +258,7 @@ def show_feedback_banner():
                 </svg>
             </div>
             <div class="feedback-text">
-                <p>Hasil deteksi kurang tepat?</p>
+                <p>Ragu dengan hasil deteksi ?</p>
                 <span>Bantu kami tingkatkan akurasi model</span>
             </div>
         </div>
