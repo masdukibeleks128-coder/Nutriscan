@@ -204,7 +204,7 @@ def show_feedback_banner():
         border-left: 3px solid #639922;
         border-radius: 10px;
         padding: 14px 16px;
-        margin: 16px 0 8px 0;
+        margin: 16px auto 8px auto;
     }}
     .feedback-banner-left {{
         display: flex;
