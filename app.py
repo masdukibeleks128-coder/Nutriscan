@@ -385,7 +385,9 @@ if cek_library():
                         col1, col2 = st.columns([1, 1.5])
                         with col1:
                           st.markdown("<p style='font-size: 14px; text-align: center;'>Hasil Deteksi</p>", unsafe_allow_html=True)
-                          st.image(hasil[0].plot(), use_column_width=True)
+                          st.markdown("<div style='display: flex; justify-content: center;'>", unsafe_allow_html=True)
+                          st.image(hasil[0].plot(), width=300)
+                          st.markdown("</div>", unsafe_allow_html=True)
 
                         with col2:
                           info = rekomendasi.get(objek_terdeteksi)
