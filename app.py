@@ -293,7 +293,7 @@ if cek_library():
                 try:
                     torch.serialization.add_safe_globals([DetectionModel])
                     model = YOLO('best.pt')
-                    hasil = model(temp_file)
+                    hasil = model(temp_file, conf = 0.69)
 
                     nama_kelas = hasil[0].names
                     semua_kelas = list(nama_kelas.values())
