@@ -385,6 +385,8 @@ if cek_library():
                         col1, col2 = st.columns([1, 1.5])
                         with col1:
                           st.markdown("<p style='font-size: 14px; text-align: center;'>Hasil Deteksi</p>", unsafe_allow_html=True)
+                          hasil_plot = hasil[0].plot()
+                          hasil_rgb = hasil_plot[:,:,::-1]
                           st.image(hasil[0].plot(), use_column_width=True)
 
                         with col2:
