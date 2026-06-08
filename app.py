@@ -280,7 +280,7 @@ if cek_library():
     if uploaded_file:
         temp_dir = tempfile.mkdtemp()
         temp_file = os.path.join(temp_dir, "gambar.jpg")
-        image = Image.open(uploaded_file)
+        image = Image.open(uploaded_file).convert("RGB")
         image = image.resize((300, 300))
         image.save(temp_file)
 
