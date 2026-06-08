@@ -387,7 +387,7 @@ if cek_library():
                           st.markdown("<p style='font-size: 14px; text-align: center;'>Hasil Deteksi</p>", unsafe_allow_html=True)
                           hasil_plot = hasil[0].plot()
                           hasil_rgb = hasil_plot[:,:,::-1]
-                          st.image(hasil[0].plot(), use_column_width=True)
+                          st.image(hasil_rgb, use_column_width=True)
 
                         with col2:
                           info = rekomendasi.get(objek_terdeteksi)
