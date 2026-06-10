@@ -429,7 +429,7 @@ if cek_library():
                               <div class='kotak-rekomendasi'>
                                   Berdasarkan hasil deteksi model, tanaman menunjukkan gejala <strong>{info['gejala']}</strong>
                                   dengan tingkat keyakinan model sebesar <strong>{confidence_tertinggi*100:.2f}%</strong>,
-                                  <strong>{info['penyebab']}</strong>. <strong>{info['dampak']}</strong>
+                                  <strong>{info['penyebab']}</strong>. <strong>{info['dampak']}</strong>,
                                   maka diperlukan penambahan <strong>{info['pupuk']}</strong>.
                               </div>
                             """, unsafe_allow_html=True)
