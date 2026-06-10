@@ -404,7 +404,7 @@ if cek_library():
                                 padding-right: 40px;
                                 border-radius: 10px;
                                 font-size: 20px;
-                                color: white;
+                                color: #1a1a1a;            /* default: teks gelap untuk mode cerah */
                                 line-height: 1.6;
                                 text-align: justify;
                                 word-wrap: break-word;
@@ -413,6 +413,13 @@ if cek_library():
                                 white-space: normal;
                                 max-width: 600px !important;
                                 box-sizzing: border-box !important;
+                              }
+
+                              /* pakai dark mode teks menjadi putih */
+                              @media (prefers-color-scheme: dark) {
+                                  .kotak-rekomendasi {
+                                        color: #ffffff;
+                                  }
                               }
                               </style>
                           """, unsafe_allow_html=True)
