@@ -320,15 +320,21 @@ if cek_library():
                         rekomendasi = {
                           "N_Deficiency": {
                             "gejala": "Defisiensi Nitrogen (N)",
-                            "pupuk": "pupuk Urea atau ZA (Nitrogen)"
+                            "pupuk": "pupuk Urea atau ZA (Nitrogen)",
+                            "penyebab": "Defisiensi nitrogen dapat terjadi karena kurangnya unsur nitrogen pada tanah",
+                            "dampak": "Kurangnya unsur nitrogen dapat menyebabkan lambatnya pertumbuhan tanaman, tanaman kerdil, serta menyempitnya daun yang mengakibatkan menurunnya hasil panen"
                           },
                           "P_Deficiency": {
                             "gejala": "Defisiensi Fosfor (P)",
-                            "pupuk": "pupuk SP-36 atau TSP (Fosfor)"
+                            "pupuk": "pupuk SP-36 atau TSP (Fosfor)",
+                            "penyebab": "Defisiensi fosfor dapat terjadi karena kurangnya unsur fosfor pada tanah yang dapat diserap oleh tanaman",
+                            "dampak": "kurangnya unsur nitrogen dapat menyebabkan tertundanya proses kematangan dari jagung dan pembentukan batang tanaman jagung yang relatif lebih ramping"
                           },
                           "K_Deficiency": {
                             "gejala": "Defisiensi Kalium (K)",
-                            "pupuk": "pupuk KCL atau ZK (Kalium)"
+                            "pupuk": "pupuk KCL atau ZK (Kalium)",
+                            "penyebab": "Defisiensi kalium dapat terjadi karena kurangnya unsur kalium yang dapat diserap oleh tanaman pada tanah",
+                            "dampak": "kurangnya unsur kalium dapat menyebabkan tanaman menjadi kerdil, rentan rebah, dan tanaman rentan terserang penyakit"
                           },
                           "Nutrient_Sufficiency": None
                         }
@@ -422,7 +428,8 @@ if cek_library():
                             st.markdown(f"""
                               <div class='kotak-rekomendasi'>
                                   Berdasarkan hasil deteksi model, tanaman menunjukkan gejala <strong>{info['gejala']}</strong>
-                                  dengan tingkat keyakinan model sebesar <strong>{confidence_tertinggi*100:.2f}%</strong>, 
+                                  dengan tingkat keyakinan model sebesar <strong>{confidence_tertinggi*100:.2f}%</strong>,
+                                  <strong>{info['penyebab']}</strong>. <strong>{info['dampak']}</strong>
                                   maka diperlukan penambahan <strong>{info['pupuk']}</strong>.
                               </div>
                             """, unsafe_allow_html=True)
